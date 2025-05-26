@@ -1,0 +1,79 @@
+﻿@model AdminCandidatos.Application.Commands.Candidates.CreateCandidateCommand
+
+
+@{
+    ViewData["Title"] = "Nuevo Candidato";
+}
+
+<h2>Nuevo Candidato</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Surname"></label>
+        <input asp-for="Surname" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Birthdate"></label>
+        <input asp-for="Birthdate" class="form-control" type="date" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" type="email" />
+    </div>
+@* 
+    <h4>Experiencias Laborales</h4>
+    <div id="experiences-container">
+    </div>
+
+    <button type="button" class="btn btn-secondary" onclick="addExperience()">Agregar experiencia</button> *@
+
+    <br /><br />
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <script>
+        let experienceIndex = 0;
+
+        function addExperience() {
+            const container = document.getElementById('experiences-container');
+            const html = `
+                <div class="card p-3 mb-3">
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input name="Experiences[${experienceIndex}].Company" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Puesto</label>
+                        <input name="Experiences[${experienceIndex}].Job" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea name="Experiences[${experienceIndex}].Description" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Salario</label>
+                        <input name="Experiences[${experienceIndex}].Salary" class="form-control" type="number" step="0.01" />
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Inicio</label>
+                        <input name="Experiences[${experienceIndex}].BeginDate" class="form-control" type="date" />
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Fin</label>
+                        <input name="Experiences[${experienceIndex}].EndDate" class="form-control" type="date" />
+                    </div>
+                </div>`;
+            container.insertAdjacentHTML('beforeend', html);
+            experienceIndex++;
+        }
+    </script>
+}

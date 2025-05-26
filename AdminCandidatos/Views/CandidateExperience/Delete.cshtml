@@ -1,0 +1,21 @@
+﻿@model AdminCandidatos.Infrastructure.Models.CandidateExperience
+
+@{
+    ViewData["Title"] = "Eliminar experiencia";
+}
+
+<h2>¿Estás seguro de que deseas eliminar esta experiencia?</h2>
+
+<div>
+    <h4>Empresa: @Model.Company</h4>
+    <p><strong>Cargo:</strong> @Model.Job</p>
+    <p><strong>Descripción:</strong> @Model.Description</p>
+    <p><strong>Salario:</strong> @Model.Salary.ToString("C")</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.IdCandidateExperience" />
+    <input type="hidden" name="idCandidate" value="@Model.IdCandidate" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Details" asp-controller="Candidate" asp-route-id="@Model.IdCandidate" class="btn btn-secondary">Cancelar</a>
+</form>

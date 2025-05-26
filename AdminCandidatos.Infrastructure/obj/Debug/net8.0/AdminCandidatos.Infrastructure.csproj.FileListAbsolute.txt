@@ -1,0 +1,12 @@
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\bin\Debug\net8.0\AdminCandidatos.Infrastructure.deps.json
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\bin\Debug\net8.0\AdminCandidatos.Infrastructure.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\bin\Debug\net8.0\AdminCandidatos.Infrastructure.pdb
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.AssemblyInfo.cs
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\refint\AdminCandidatos.Infrastructure.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\AdminCandidatos.Infrastructure.pdb
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Infrastructure\obj\Debug\net8.0\ref\AdminCandidatos.Infrastructure.dll

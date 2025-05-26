@@ -1,0 +1,76 @@
+﻿@model IEnumerable<AdminCandidatos.Infrastructure.Models.Candidates>
+
+@{
+    ViewData["Title"] = "Listado de Candidatos";
+}
+
+<h2>Listado de Candidatos</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Nuevo Candidato</a>
+</p>
+<form method="get" asp-controller="Candidate" asp-action="Index" class="mb-3">
+    <div class="row g-2">
+        <div class="col-md-4">
+            <input type="text" name="name" class="form-control" placeholder="Buscar por nombre" />
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="email" class="form-control" placeholder="Buscar por email" />
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+            <a asp-action="Index" class="btn btn-secondary">Limpiar</a>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.Email</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.IdCandidate">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@item.IdCandidate">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdCandidate">Eliminar</a>
+                </td>
+                <td>
+
+                    <a asp-controller="CandidateExperience"
+                       asp-action="Create"
+                       asp-route-candidateId="@item.IdCandidate"
+                       class="btn btn-sm btn-success">
+                        + Experiencia
+                    </a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="addExperienceModal" tabindex="-1" role="dialog" aria-labelledby="addExperienceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="addExperienceModalLabel">Agregar Experiencia</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+

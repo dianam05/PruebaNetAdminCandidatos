@@ -1,0 +1,42 @@
+﻿@model AdminCandidatos.Infrastructure.Models.Candidates
+
+@{
+    ViewData["Title"] = "Detalle del Candidato";
+}
+
+<h2>@Model.Name @Model.Surname</h2>
+
+<p><strong>Email:</strong> @Model.Email</p>
+<p><strong>Fecha de nacimiento:</strong> @Model.Birthdate.ToShortDateString()</p>
+
+<h3>Experiencias Laborales</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Empresa</th>
+            <th>Cargo</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var exp in Model.Experiences)
+        {
+            <tr>
+                <td>@exp.Company</td>
+                <td>@exp.Job</td>
+                <td>@exp.BeginDate?.ToShortDateString()</td>
+                <td>@exp.EndDate?.ToShortDateString()</td>
+                <td>
+                    <a asp-controller="CandidateExperience" asp-action="Edit" asp-route-id="@exp.IdCandidateExperience" class="btn btn-sm btn-primary">Editar</a>
+                    <a asp-controller="CandidateExperience" asp-action="Delete" asp-route-id="@exp.IdCandidateExperience" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Edit" asp-route-id="@Model.IdCandidate" class="btn btn-warning">Editar Candidato</a>
+<a asp-action="Index" class="btn btn-secondary">Volver al listado</a>

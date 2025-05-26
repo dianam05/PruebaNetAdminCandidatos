@@ -1,0 +1,11 @@
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\bin\Debug\net8.0\AdminCandidatos.Domain.deps.json
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\bin\Debug\net8.0\AdminCandidatos.Domain.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\bin\Debug\net8.0\AdminCandidatos.Domain.pdb
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\AdminCandidatos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\AdminCandidatos.Domain.AssemblyInfoInputs.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\AdminCandidatos.Domain.AssemblyInfo.cs
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\AdminCandidatos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\AdminCandidatos.Domain.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\refint\AdminCandidatos.Domain.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\AdminCandidatos.Domain.pdb
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Domain\obj\Debug\net8.0\ref\AdminCandidatos.Domain.dll

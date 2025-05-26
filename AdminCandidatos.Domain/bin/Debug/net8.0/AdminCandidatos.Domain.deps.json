@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AdminCandidatos.Domain/1.0.0": {
+        "runtime": {
+          "AdminCandidatos.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AdminCandidatos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

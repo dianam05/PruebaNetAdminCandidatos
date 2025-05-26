@@ -1,0 +1,15 @@
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\AdminCandidatos.Tests.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\AdminCandidatos.Tests.pdb
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\obj\Debug\AdminCandidatos.Tests.csproj.AssemblyReference.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\obj\Debug\AdminCandidatos.Tests.csproj.CoreCompileInputs.cache
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\obj\Debug\AdminCan.9F2C3C40.Up2Date
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\obj\Debug\AdminCandidatos.Tests.dll
+C:\Users\dmunoz\source\repos\AdminCandidatos\AdminCandidatos.Tests\obj\Debug\AdminCandidatos.Tests.pdb

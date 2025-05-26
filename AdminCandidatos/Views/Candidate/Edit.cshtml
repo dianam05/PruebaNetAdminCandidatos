@@ -1,0 +1,77 @@
+﻿@model AdminCandidatos.Application.Commands.Candidates.UpdateCandidateCommand
+
+
+@{
+    ViewData["Title"] = "Editar Candidato";
+}
+
+<h2>Editar Candidato</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="IdCandidate" />
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Surname"></label>
+        <input asp-for="Surname" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Birthdate"></label>
+        <input asp-for="Birthdate" class="form-control" type="date" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" type="email" />
+    </div>
+
+    <h4>Experiencias Laborales</h4>
+    <div id="experiences-container">
+        @if (Model.Experiences != null && Model.Experiences.Count > 0)
+        {
+         @*    for (int i = 0; i < Model.Experiences.Count; i++)
+            {
+                <div class="card p-3 mb-3">
+                    <input type="hidden" name="Experiences[@i].IdCandidateExperience" value="@Model.Experiences[i].IdCandidateExperience" />
+                    <input type="hidden" name="Experiences[@i].IdCandidate" value="@Model.IdCandidate" />
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input name="Experiences[@i].Company" class="form-control" value="@Model.Experiences[i].Company" />
+                    </div>
+                    <div class="form-group">
+                        <label>Puesto</label>
+                        <input name="Experiences[@i].Job" class="form-control" value="@Model.Experiences[i].Job" />
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea name="Experiences[@i].Description" class="form-control">@Model.Experiences[i].Description</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Salario</label>
+                        <input name="Experiences[@i].Salary" class="form-control" type="number" step="0.01" value="@Model.Experiences[i].Salary" />
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Inicio</label>
+                        <input name="Experiences[@i].BeginDate" class="form-control" type="date" value="@Model.Experiences[i].BeginDate.ToString("yyyy-MM-dd")" />
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Fin</label>
+                        <input name="Experiences[@i].EndDate" class="form-control" type="date" value="@Model.Experiences[i].EndDate?.ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+            } *@
+        }
+        else
+        {
+            <p><em>Este candidato no tiene experiencias registradas.</em></p>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
