@@ -17,22 +17,26 @@ AdminCandidatos.sln
 -AdminCandidatos.Infrastructure       ← Acceso a datos (EF Core, Models, DbContext)
 
 	Models                             ← Modelos EF (Candidate, CandidateExperience)
-	Persistence                         ← DbContext (AdminCandidatosDBContext)
+	Persistence                        ← DbContext (AdminCandidatosDBContext)
 
 -AdminCandidatos.Application          ← Lógica de aplicación separada por CQRS
-	Commands                           ← Comandos para crear, editar, eliminar
-	Candidates       ← Comandos de Candidate (Create, Update, Delete) CandidateExperiences         ← Comandos de CandidateExperience
+
+	Commands              ← Comandos para crear, editar, eliminar
+		Candidates            ← Comandos de Candidate (Create, Update, Delete) CandidateExperiences         
+		CandidateExperience   ← Comandos de CandidateExperience
 	Interfaces                          Interfaces para Inyección de Dependencias
-				Candidates       ← Interfaces de Candidate (Create, Update, Delete)
-				CandidateExperiences      ← Interfaces de CandidateExperience
+		Candidates             ← Interfaces de Candidate (Create, Update, Delete)
+		CandidateExperiences   ← Interfaces de CandidateExperience
 	Queries             ← Consultas (queries + handlers)
-										  ← Queries como GetAll, GetById	
--MiAppWeb                            ← Proyecto web MVC (presentación)
+						← Queries como GetAll, GetById	
+										  
+-MiAppWeb               ← Proyecto web MVC (presentación)
+
 	Controllers    ← Controladores MVC (CandidateController, CandidateExperienceController)
-	Views                              ← Vistas Razor (Create.cshtml, Index.cshtml, etc.)
-	Candidate
-	CandidateExperience
-	wwwroot                          ← Archivos estáticos (css, js)
+	Views                           ← Vistas Razor (Create.cshtml, Index.cshtml, etc.)
+		Candidate
+		CandidateExperience
+	wwwroot                         ← Archivos estáticos (css, js)
 	Program.cs / appsettings.json   ← Configuración general y punto de entrada
 
 
