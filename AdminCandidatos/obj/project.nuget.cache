@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aRBzos2nC8w=",
+  "dgSpecHash": "hkFQXnnEQ7Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+  "projectFilePath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dmunoz\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dmunoz\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -92,9 +92,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.5.0 was resolved.",
-      "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+      "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+      "filePath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net8.0"

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -18,10 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AdminCandidatos.Application\AdminCandidatos.Application.csproj" />
     <ProjectReference Include="..\AdminCandidatos.Domain\AdminCandidatos.Domain.csproj" />
     <ProjectReference Include="..\AdminCandidatos.Infrastructure\AdminCandidatos.Infrastructure.csproj" />
-    <ProjectReference Include="..\AdminCandidatos.Tests\AdminCandidatos.Tests.csproj" />
-    <ProjectReference Include="..\prb\AdminCandidatos.Application.csproj" />
   </ItemGroup>
 
 </Project>

@@ -17,6 +17,8 @@ namespace AdminCandidatos.Infrastructure.Models
         public string Surname { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+
+        [Required]
         public DateTime Birthdate { get; set; }
 
         [EmailAddress]

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
       "projectName": "AdminCandidatos.Domain",
-      "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
+      "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
       "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\obj\\",
+      "outputPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,4 +1,5 @@
 ﻿using AdminCandidatos.Application.Commands.Candidates;
+using AdminCandidatos.Application.Interfaces.Candidates;
 using AdminCandidatos.Infrastructure;
 using AdminCandidatos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +7,7 @@ using System;
 
 namespace AdminCandidatos.Application.Commands.Candidates
 {
-    public class DeleteCandidateCommandHandler
+    public class DeleteCandidateCommandHandler : IDeleteCandidateCommandHandler
     {
         private readonly AdminCandidatosDBContext _context;
 

@@ -1,17 +1,86 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj": {}
+    "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj": {
+    "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
-        "projectName": "AdminCandidatos.Domain",
-        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj",
+        "projectName": "AdminCandidatos.Application",
+        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj",
         "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dmunoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
+        "projectName": "AdminCandidatos.Domain",
+        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj",
+        "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
+    "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj",
         "projectName": "AdminCandidatos.Infrastructure",
-        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -140,30 +209,14 @@
         }
       }
     },
-    "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj",
-        "projectName": "AdminCandidatos.Tests",
-        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj": {
+    "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
         "projectName": "AdminCandidatos",
-        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
         "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\obj\\",
+        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,17 +237,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj": {
-                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj"
+              "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj": {
+                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj"
               },
-              "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj"
+              "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj": {
+                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj"
               },
-              "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj": {
-                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj"
-              },
-              "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj": {
-                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj"
+              "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj"
               }
             }
           }
@@ -253,84 +303,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj",
-        "projectName": "AdminCandidatos.Application",
-        "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj",
-        "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\dmunoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj"
-              },
-              "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj": {
-                "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -1,4 +1,6 @@
 using AdminCandidatos.Application.Commands.Candidates;
+using AdminCandidatos.Application.Interfaces.CandidateExperiences;
+using AdminCandidatos.Application.Interfaces.Candidates;
 using AdminCandidatos.Application.Queries;
 using AdminCandidatos.Application.Queries.Candidates;
 using AdminCandidatos.Infrastructure;
@@ -12,22 +14,49 @@ namespace MiAppWeb.Controllers
     {
         private readonly AdminCandidatosDBContext _context;
 
-        public CandidateController(AdminCandidatosDBContext context)
+        private readonly IGetAllCandidatesQueryHandler _getAllHandler;
+        private readonly IGetCandidateByIdQueryHandler _getByIdHandler;
+        private readonly ICreateCandidateCommandHandler _createHandler;
+        private readonly IUpdateCandidateCommandHandler _updateHandler;
+        private readonly IDeleteCandidateCommandHandler _deleteHandler;
+
+        private readonly ICreateCandidateExperienceCommandHandler _createExperienceHandler;
+        private readonly IUpdateCandidateExperienceCommandHandler _updateExperienceHandler;
+        private readonly IDeleteCandidateExperienceCommandHandler _deleteExperienceHandler;
+
+        public CandidateController(
+            IGetAllCandidatesQueryHandler getAllHandler,
+            IGetCandidateByIdQueryHandler getByIdHandler,
+            ICreateCandidateCommandHandler createHandler,
+            IUpdateCandidateCommandHandler updateHandler,
+            IDeleteCandidateCommandHandler deleteHandler,
+            ICreateCandidateExperienceCommandHandler createExperienceHandler,
+            IUpdateCandidateExperienceCommandHandler updateExperienceHandler,
+            IDeleteCandidateExperienceCommandHandler deleteExperienceHandler)
         {
-            _context = context;
+            _getAllHandler = getAllHandler;
+            _getByIdHandler = getByIdHandler;
+            _createHandler = createHandler;
+            _updateHandler = updateHandler;
+            _deleteHandler = deleteHandler;
+            _createExperienceHandler = createExperienceHandler;
+            _updateExperienceHandler = updateExperienceHandler;
+            _deleteExperienceHandler = deleteExperienceHandler;
         }
+
+        [HttpGet]
+        public IActionResult Search(string name, string email)
+        {
+            var candidates = _getAllHandler.Handle(name, email);
+            return View("Index", candidates);
+        }
+
 
         // GET: /Candidate/
         public IActionResult Index(string? name, string? email)
         {
-            var handler = new GetAllCandidatesQueryHandler(_context);
-            var query = new GetAllCandidatesQuery
-            {
-                Name = name,
-                Email = email
-            };
 
-            var candidates = handler.Handle(query);
+            var candidates = _getAllHandler.Handle();
             return View(candidates);
         }
 
@@ -35,7 +64,7 @@ namespace MiAppWeb.Controllers
         public IActionResult Details(int id)
         {
             var handler = new GetCandidateByIdQueryHandler(_context);
-            var candidate = handler.Handle(new GetCandidateByIdQuery(id));
+            var candidate = _getByIdHandler.Handle(new GetCandidateByIdQuery(id));
             if (candidate == null)
                 return NotFound();
 
@@ -56,8 +85,7 @@ namespace MiAppWeb.Controllers
             if (!ModelState.IsValid)
                 return View(command);
 
-            var handler = new CreateCandidateCommandHandler(_context);
-            handler.Handle(command);
+            _createHandler.Handle(command);
             return RedirectToAction(nameof(Index));
         }
 
@@ -65,7 +93,7 @@ namespace MiAppWeb.Controllers
         public IActionResult Edit(int id)
         {
             var handler = new GetCandidateByIdQueryHandler(_context);
-            var candidate = handler.Handle(new GetCandidateByIdQuery(id));
+            var candidate = _getByIdHandler.Handle(new GetCandidateByIdQuery(id));
             if (candidate == null)
                 return NotFound();
 
@@ -92,7 +120,7 @@ namespace MiAppWeb.Controllers
                 return View(command);
 
             var handler = new UpdateCandidateCommandHandler(_context);
-            handler.Handle(command);
+            _updateHandler.Handle(command);
             return RedirectToAction(nameof(Index));
         }
 
@@ -100,7 +128,7 @@ namespace MiAppWeb.Controllers
         public IActionResult Delete(int id)
         {
             var handler = new GetCandidateByIdQueryHandler(_context);
-            var candidate = handler.Handle(new GetCandidateByIdQuery(id));
+            var candidate = _getByIdHandler.Handle(new GetCandidateByIdQuery(id));
             if (candidate == null)
                 return NotFound();
 
@@ -113,7 +141,7 @@ namespace MiAppWeb.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             var handler = new DeleteCandidateCommandHandler(_context);
-            handler.Handle(new DeleteCandidateCommand(id));
+            _deleteHandler.Handle(new DeleteCandidateCommand(id));
             return RedirectToAction(nameof(Index));
         }
 

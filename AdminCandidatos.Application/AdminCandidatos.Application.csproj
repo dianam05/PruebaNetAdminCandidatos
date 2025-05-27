@@ -7,16 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MediatR" Version="12.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AdminCandidatos.Infrastructure\AdminCandidatos.Infrastructure.csproj" />
-    <ProjectReference Include="..\AdminCandidatos.Tests\AdminCandidatos.Tests.csproj" />
   </ItemGroup>
 
 </Project>

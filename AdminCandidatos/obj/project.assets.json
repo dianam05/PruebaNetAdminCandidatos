@@ -1661,9 +1661,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "AdminCandidatos.Infrastructure": "1.0.0",
-          "AdminCandidatos.Tests": "1.0.0",
-          "MediatR": "12.5.0"
+          "AdminCandidatos.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AdminCandidatos.Application.dll": {}
@@ -1693,15 +1691,6 @@
         },
         "runtime": {
           "bin/placeholder/AdminCandidatos.Infrastructure.dll": {}
-        }
-      },
-      "AdminCandidatos.Tests/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/AdminCandidatos.Tests.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AdminCandidatos.Tests.dll": {}
         }
       }
     }
@@ -4851,8 +4840,8 @@
     },
     "AdminCandidatos.Application/1.0.0": {
       "type": "project",
-      "path": "../prb/AdminCandidatos.Application.csproj",
-      "msbuildProject": "../prb/AdminCandidatos.Application.csproj"
+      "path": "../AdminCandidatos.Application/AdminCandidatos.Application.csproj",
+      "msbuildProject": "../AdminCandidatos.Application/AdminCandidatos.Application.csproj"
     },
     "AdminCandidatos.Domain/1.0.0": {
       "type": "project",
@@ -4863,11 +4852,6 @@
       "type": "project",
       "path": "../AdminCandidatos.Infrastructure/AdminCandidatos.Infrastructure.csproj",
       "msbuildProject": "../AdminCandidatos.Infrastructure/AdminCandidatos.Infrastructure.csproj"
-    },
-    "AdminCandidatos.Tests/1.0.0": {
-      "type": "project",
-      "path": "../AdminCandidatos.Tests/AdminCandidatos.Tests.csproj",
-      "msbuildProject": "../AdminCandidatos.Tests/AdminCandidatos.Tests.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4875,7 +4859,6 @@
       "AdminCandidatos.Application >= 1.0.0",
       "AdminCandidatos.Domain >= 1.0.0",
       "AdminCandidatos.Infrastructure >= 1.0.0",
-      "AdminCandidatos.Tests >= 1.0.0",
       "MediatR >= 12.5.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
@@ -4890,11 +4873,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+      "projectUniqueName": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
       "projectName": "AdminCandidatos",
-      "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
+      "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\AdminCandidatos.csproj",
       "packagesPath": "C:\\Users\\dmunoz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos\\obj\\",
+      "outputPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4915,17 +4898,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj": {
-              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj"
+            "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj": {
+              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Application\\AdminCandidatos.Application.csproj"
             },
-            "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj"
+            "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj": {
+              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Domain\\AdminCandidatos.Domain.csproj"
             },
-            "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj": {
-              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Tests\\AdminCandidatos.Tests.csproj"
-            },
-            "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj": {
-              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\prb\\AdminCandidatos.Application.csproj"
+            "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj"
             }
           }
         }

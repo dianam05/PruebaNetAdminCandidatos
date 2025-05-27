@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AErDWZyVN9w=",
+  "dgSpecHash": "TwtthJwrJwE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dmunoz\\source\\repos\\AdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\dmunoz\\source\\repos\\dianam05\\PruebaNetAdminCandidatos\\AdminCandidatos.Infrastructure\\AdminCandidatos.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dmunoz\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.5\\microsoft.entityframeworkcore.9.0.5.nupkg.sha512",
     "C:\\Users\\dmunoz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.5\\microsoft.entityframeworkcore.abstractions.9.0.5.nupkg.sha512",

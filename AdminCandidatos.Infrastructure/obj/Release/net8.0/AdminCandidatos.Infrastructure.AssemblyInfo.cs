@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminCandidatos.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+442cf1c026f57a207529a287801658a5ddb98b23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e229e6de9f4aaf68170390774927e44cc5b8914")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminCandidatos.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminCandidatos.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

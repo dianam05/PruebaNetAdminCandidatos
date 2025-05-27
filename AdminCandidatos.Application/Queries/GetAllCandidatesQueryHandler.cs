@@ -1,4 +1,5 @@
-﻿using AdminCandidatos.Infrastructure.Models;
+﻿using AdminCandidatos.Application.Interfaces.Candidates;
+using AdminCandidatos.Infrastructure.Models;
 using AdminCandidatos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AdminCandidatos.Application.Queries
 {
-    public class GetAllCandidatesQueryHandler
+    public class GetAllCandidatesQueryHandler : IGetAllCandidatesQueryHandler
     {
         private readonly AdminCandidatosDBContext _context;
 
@@ -20,10 +21,10 @@ namespace AdminCandidatos.Application.Queries
 
         public List<Infrastructure.Models.Candidates> Handle()
         {
-            return _context.Candidates
+            var candidates = _context.Candidates
                 .Include(c => c.Experiences)
-                .OrderBy(c => c.Surname)
                 .ToList();
+            return candidates;
         }
 
         public List<Infrastructure.Models.Candidates> Handle(GetAllCandidatesQuery query)
@@ -41,6 +42,25 @@ namespace AdminCandidatos.Application.Queries
             }
 
             return candidates.OrderBy(c => c.Name).ToList();
+        }
+
+        public IEnumerable<Infrastructure.Models.Candidates> Handle(string name = null, string email = null)
+        {
+            var query = _context.Candidates
+                .Include(c => c.Experiences)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(name))
+            {
+                query = query.Where(c => c.Name.Contains(name));
+            }
+
+            if (!string.IsNullOrWhiteSpace(email))
+            {
+                query = query.Where(c => c.Email.Contains(email));
+            }
+
+            return query.ToList();
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using AdminCandidatos.Infrastructure.Persistence;
+﻿using AdminCandidatos.Application.Interfaces.Candidates;
+using AdminCandidatos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AdminCandidatos.Application.Commands.Candidates
 {
-    public class UpdateCandidateCommandHandler
+    public class UpdateCandidateCommandHandler : IUpdateCandidateCommandHandler
     {
         private readonly AdminCandidatosDBContext _context;
 

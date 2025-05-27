@@ -1,6 +1,5 @@
 ﻿using AdminCandidatos.Infrastructure.Models;
 using AdminCandidatos.Infrastructure.Persistence;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

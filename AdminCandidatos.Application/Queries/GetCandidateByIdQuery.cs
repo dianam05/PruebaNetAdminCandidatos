@@ -1,6 +1,5 @@
 ﻿using AdminCandidatos.Infrastructure.Models;
 using AdminCandidatos.Infrastructure.Persistence;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,9 +13,9 @@ namespace AdminCandidatos.Application.Queries
     {
         public int IdCandidate { get; }
 
-        public GetCandidateByIdQuery(int idCandidate)
+        public GetCandidateByIdQuery(int id)
         {
-            IdCandidate = idCandidate;
+            IdCandidate = id;
         }
     }
 }

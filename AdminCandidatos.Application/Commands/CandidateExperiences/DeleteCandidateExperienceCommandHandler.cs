@@ -1,9 +1,10 @@
 ﻿using AdminCandidatos.Application.Commands.CandidateExperiences;
+using AdminCandidatos.Application.Interfaces.CandidateExperiences;
 using AdminCandidatos.Infrastructure.Persistence;
 
 namespace AdminCandidatos.Application.Handlers.CandidateExperiences
 {
-    public class DeleteCandidateExperienceCommandHandler
+    public class DeleteCandidateExperienceCommandHandler : IDeleteCandidateExperienceCommandHandler
     {
         private readonly AdminCandidatosDBContext _context;
 

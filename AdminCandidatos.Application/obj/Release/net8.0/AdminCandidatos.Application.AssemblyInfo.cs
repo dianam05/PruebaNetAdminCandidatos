@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminCandidatos.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14689482d0859cb25559baf06432b4084493ce90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e229e6de9f4aaf68170390774927e44cc5b8914")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminCandidatos.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminCandidatos.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

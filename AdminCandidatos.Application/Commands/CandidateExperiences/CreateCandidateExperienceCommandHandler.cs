@@ -1,10 +1,11 @@
 ﻿using AdminCandidatos.Application.Commands.CandidateExperiences;
+using AdminCandidatos.Application.Interfaces.CandidateExperiences;
 using AdminCandidatos.Infrastructure.Models;
 using AdminCandidatos.Infrastructure.Persistence;
 
 namespace AdminCandidatos.Application.Handlers.CandidateExperiences
 {
-    public class CreateCandidateExperienceCommandHandler
+    public class CreateCandidateExperienceCommandHandler : ICreateCandidateExperienceCommandHandler
     {
         private readonly AdminCandidatosDBContext _context;
 
