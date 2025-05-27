@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/AdminCandidatos/bin/Debug/net8.0
+/packages/MSTest.TestAdapter.2.2.10/build
+/packages
