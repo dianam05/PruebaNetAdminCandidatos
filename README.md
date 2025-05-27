@@ -15,25 +15,26 @@ base de datos en SQL Express o In-Memory, principios de DDD, SOLID, Clean Code, 
 #
 AdminCandidatos.sln
 -AdminCandidatos.Infrastructure       ← Acceso a datos (EF Core, Models, DbContext)
--- Models                             ← Modelos EF (Candidate, CandidateExperience)
---Persistence                         ← DbContext (AdminCandidatosDBContext)
+
+	Models                             ← Modelos EF (Candidate, CandidateExperience)
+	Persistence                         ← DbContext (AdminCandidatosDBContext)
 
 -AdminCandidatos.Application          ← Lógica de aplicación separada por CQRS
--- Commands                           ← Comandos para crear, editar, eliminar
---- Candidates                        ← Comandos de Candidate (Create, Update, Delete)
---- CandidateExperiences              ← Comandos de CandidateExperience
---Interfaces                          Interfaces para Inyección de Dependencias
---- Candidates                        ← Interfaces de Candidate (Create, Update, Delete)
---- CandidateExperiences              ← Interfaces de CandidateExperience
-- Queries                             ← Consultas (queries + handlers)
-                                      ← Queries como GetAll, GetById	
-- MiAppWeb                            ← Proyecto web MVC (presentación)
--- Controllers                        ← Controladores MVC (CandidateController, CandidateExperienceController)
--- Views                              ← Vistas Razor (Create.cshtml, Index.cshtml, etc.)
---- Candidate
----CandidateExperience
--- wwwroot                          ← Archivos estáticos (css, js)
---Program.cs / appsettings.json   ← Configuración general y punto de entrada
+	Commands                           ← Comandos para crear, editar, eliminar
+	Candidates       ← Comandos de Candidate (Create, Update, Delete) CandidateExperiences         ← Comandos de CandidateExperience
+	Interfaces                          Interfaces para Inyección de Dependencias
+				Candidates       ← Interfaces de Candidate (Create, Update, Delete)
+				CandidateExperiences      ← Interfaces de CandidateExperience
+	Queries             ← Consultas (queries + handlers)
+										  ← Queries como GetAll, GetById	
+-MiAppWeb                            ← Proyecto web MVC (presentación)
+	Controllers    ← Controladores MVC (CandidateController, CandidateExperienceController)
+	Views                              ← Vistas Razor (Create.cshtml, Index.cshtml, etc.)
+	Candidate
+	CandidateExperience
+	wwwroot                          ← Archivos estáticos (css, js)
+	Program.cs / appsettings.json   ← Configuración general y punto de entrada
+
 
 #Clonar y configurar
 url para clonar el repositorio Git
